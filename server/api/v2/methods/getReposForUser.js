@@ -16,7 +16,8 @@ async function getReposForUser(username, per_page = 100) {
     // get all repos
     var result = await github.repos.getForUser({
         username: username,
-        per_page: per_page
+        per_page: per_page,
+        direction: 'asc'
     }).catch(err => { throw err });
     // Declare global variable to store repos data
     var repos;

@@ -15,7 +15,8 @@ module.exports = async function (specs, next) {
     nextPage = await github.repos.getForUser({
       username: specs.user,
       per_page: specs.per_page,
-      page: next
+      page: next,
+      direction: 'asc'
     });
   } else {
       nextPage = await github.issues.getForRepo({
@@ -23,7 +24,8 @@ module.exports = async function (specs, next) {
         repo: specs.repo,
         state: 'open',
         per_page: specs.per_page,
-        page: next
+        page: next,
+        direction: 'asc'
       });
   }
   return nextPage.data;

@@ -1,6 +1,6 @@
 // This is the Home Page
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Repo from './Repo';
 
@@ -14,7 +14,7 @@ export default class ReposPage extends Component {
   };
 
   componentDidMount() {
-    let url = 'http://localhost:3005/api/nodejs/repos';
+    let url = 'http://localhost:3005/api/jsdev17/repos';
     // Fetch repositories for given user from server
     axios.get(url)
       .then(res => {
@@ -45,13 +45,17 @@ export default class ReposPage extends Component {
         <span id="repos-count" className="d-flex justify-content-center">
         {this.state.loaded ? this.showReposCount() : null}
         </span>
-        <ul id="repos-content"> 
-        {/* Ought to be able to handle a case in which
-          there are no repos with issues. But ultimately,
-          however, that depends on whether the user has 
-          control over which user he searches for... */}
-          {repos} 
+        <ul id="repos-content">
+          {/* This cryptic nested ternary checks if there are repos WITH issues
+          to show... if not, it renders a message, else, it shows the repos */}
+          {
+            !this.state.loaded ? null : 
+            repos.length === 0 ? <p>No repositories with issues to show...</p> : 
+            repos
+          }
+          {/* {repos}  */}
         </ul>
+        
       </div>
     );
   }

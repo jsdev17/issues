@@ -46,10 +46,10 @@ tr:nth-child(even) {
   margin: 10px;
 }
 
-/* .repo:hover {
-  background-color: #222;
-  color: #eee;
-} */
+.issue-body {
+  /* background-color: #eee; */
+  cursor: pointer;
+}
 
 #repos-content {
   box-sizing: border-box;
@@ -78,7 +78,7 @@ tr:nth-child(even) {
   max-width: 85%;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: pre-wrap;
   display: flex; /* this makes both title and price tag fit...!*/
   border: none;
   padding: 5px;
@@ -88,12 +88,15 @@ tr:nth-child(even) {
 
 #issue-list .issue-title {
   max-width: 100%;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   overflow: hidden;
+  font-size: 18px;
 }
 
 #issue-list .price {
   margin-left: auto;
   color: green;
   font-weight: bold;
+  padding: 3px;
+  font-size: 16px;
 }

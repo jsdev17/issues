@@ -7,10 +7,10 @@ export default class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <header className="app-header">
+        {/* <header className="app-header">
           <h1 className="header-title">GitHub Issues Scraper</h1>
           <p>This application retrieves issues from a given GitHub repository</p>
-        </header>
+        </header> */}
         <main className="app-content">
           <Routes />
         </main>

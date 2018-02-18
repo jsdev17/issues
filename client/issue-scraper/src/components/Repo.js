@@ -3,17 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Repo = ({repo}) => (
   <li id={repo.id} className="card text-center repo" style={{width: '25rem'}}>
-    {/* <div className="card-header">
-      {repo.full_name}
-    </div> */}
     <div className="card-block" style={{background: "#eee"}}>
       <Link to={repo.html_url} target="_blank">
         <h4 className="card-title">{repo.name}</h4>
       </Link>
-      <h6 class="card-subtitle mb-2 text-muted">Owned by: {repo.owner.login}</h6>
+      <h6 className="card-subtitle mb-2 text-muted">Owned by: {repo.owner.login}</h6>
       <p className="card-text">{repo.description}</p>
       <Link to={`/${repo.owner.login}/${repo.name}/issues`}>
-        <a href="#" className="card-link">View Issues</a>
+        View Issues
       </Link>
     </div>
     {/*optional text-muted class ommited*/}

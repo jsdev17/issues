@@ -1,6 +1,6 @@
 // Displays all issues of a given repository
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Issue from './Issue';
 import Navigation from './Navigation';
@@ -12,8 +12,11 @@ export default class IssuesPage extends Component {
     this.state = {
       username: this.props.match.params.user,
       repo: this.props.match.params.repo,
+      criteria: 'open',
       issues: []
     }
+    this.renderPage = this.renderPage.bind(this);
+    this.handleCriteriaChange = this.handleCriteriaChange.bind(this);
   }
 
   componentDidMount() {
@@ -26,22 +29,48 @@ export default class IssuesPage extends Component {
     });
   }
 
+  renderPage() {
+    var issues;
+    // Render an issue component for every issue
+    // based on current filtering criteria
+    if (this.state.criteria === 'open') {
+        issues = this.state.issues.filter(issue => issue.stage === 'open');
+        return issues = issues.map(issue => (
+          <Issue key={issue.number} issue={issue} />
+        ));
+    } else if (this.state.criteria === 'active') {
+        issues = this.state.issues.filter(issue => issue.stage === 'active');
+        return issues = issues.map(issue => (
+          <Issue key={issue.number} issue={issue} />
+        ));
+    } else if (this.state.criteria === 'closed') {
+        issues = this.state.issues.filter(issue => issue.stage === 'closed');
+        return issues = issues.map(issue => (
+          <Issue key={issue.number} issue={issue} />
+        ));
+    }
+  };
+
+  handleCriteriaChange(criteria) {
+    this.setState({criteria: criteria});
+  }
+
   render() {
-    console.log(this.props.match);
-    // Render an issue component for every issue;
-    // Make it a link to the issue on GitHub
-    var issues = this.state.issues.map(issue => (
-      <Issue key={issue.number} issue={issue}/>
-    ));
     return (
       <div>
         <Navigation
           currentLocation={this.state.repo}
         />
-        <FilterBy />
+        <FilterBy
+          criteria={this.state.criteria}
+          handleCriteriaChange={this.handleCriteriaChange}
+        />
         <ul id="issue-list" className="">
-          {issues}
+          {this.renderPage()}
         </ul>
+        {/* <div id="accordion" role="tablist" aria-multiselectable="true">
+          {issues}
+        </div> */}
       </div>
     );
   }

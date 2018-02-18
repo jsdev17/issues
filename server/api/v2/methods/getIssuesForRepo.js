@@ -2,6 +2,7 @@ var GitHubAPI = require('github');
 var github = new GitHubAPI();
 var getNextPage = require('./getNextPage');
 var traverse = require('./traverse');
+var set_price_stage_and_dude_date = require('./setPriceStageAndDueDate');
 require('dotenv').load();
 
 github.authenticate({
@@ -18,6 +19,7 @@ module.exports = async function (username, repo, per_page = 100) {
         owner: username,
         repo: repo,
         state: 'open',
+        direction: 'asc',
         per_page: per_page
     }).catch(err => { throw err });
     // Declare global variable to store issues data
@@ -42,5 +44,8 @@ module.exports = async function (username, repo, per_page = 100) {
         link: result.meta
       });
     }
+    // Grabs price tag, stage tag, and due date for
+    // each issue from database and assigns it
+    issues = await Promise.all(issues.map(issue => set_price_stage_and_dude_date(issue)));
     return issues;
 }
