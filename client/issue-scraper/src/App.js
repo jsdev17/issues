@@ -5,6 +5,7 @@ import Routes from './routes'
 
 export default class App extends Component {
   render() {
+    console.log('Hello from laptop :)');
     return (
       <div className="app-container">
         {/* <header className="app-header">
