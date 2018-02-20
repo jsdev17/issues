@@ -8,10 +8,9 @@ export default class App extends Component {
     console.log('Hello from laptop :)');
     return (
       <div className="app-container">
-        {/* <header className="app-header">
-          <h1 className="header-title">GitHub Issues Scraper</h1>
-          <p>This application retrieves issues from a given GitHub repository</p>
-        </header> */}
+        <header className="app-header">
+          <h1 className="header-title">Marketplace</h1>
+        </header>
         <main className="app-content">
           <Routes />
         </main>
