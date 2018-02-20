@@ -4,7 +4,7 @@ var api = require('./api/v2/index');
 require('dotenv').config()
 
 // Start DB
-require('./db/mongoose')('mongodb://localhost/strategic-test');
+require('./db/mongoose')(process.env.DB_URI);
 
 ///// ROUTES //////
 
