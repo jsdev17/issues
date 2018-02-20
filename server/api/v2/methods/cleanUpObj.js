@@ -7,11 +7,9 @@ module.exports = function (repo) {
             login: repo.owner.login,
             id: repo.owner.id,
             avatar_url: repo.owner.avatar_url,
-            api_url: repo.owner.url,
             html_url: repo.owner.html_url,
             repos_url: repo.owner.repos_url,
             type: repo.owner.type,
-            site_admin: repo.owner.site_admin
         },
         description: repo.description,
         private: repo.private,
