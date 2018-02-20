@@ -1,11 +1,6 @@
 var mongoose = require('mongoose');
 var moment = require('moment');
-mongoose.connect('mongodb://localhost/classdb');
-mongoose.Promise = global.Promise;
-var db = mongoose.connection,
-    Schema = mongoose.Schema;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => console.log('mongodb connected.'));
+var Schema = mongoose.Schema;
 var WorkItem = mongoose.model('WorkItem', new Schema({}));
 
 module.exports = async function (issue_number) {
