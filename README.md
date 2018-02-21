@@ -21,3 +21,4 @@ slight change in the source code; however, you will not be able to see each repo
 There's a file named `ReposPage.js` in the `client` directory. The path to this file is the following: `client/src/components/ReposPage.js`. <br /><br />
 __On line 17__, you'll see a string to an endpoint. _Change the username on the string_ to fetch repositories of another GitHub user. Like so:
 ```let url = 'http://localhost:3005/api/github/{username}/repos';```
+You must enter a valid github username.
