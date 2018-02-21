@@ -53,7 +53,6 @@ export default class ReposPage extends Component {
             repos.length === 0 ? <p>No repositories with issues to show...</p> : 
             repos
           }
-          {/* {repos}  */}
         </ul>
         
       </div>

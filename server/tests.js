@@ -12,6 +12,7 @@ test('Assertions for getReposForUser([param]) method', (t) => {
     t.equal(res.length >= 1, true,
       'has at least one repository with issues');
   })
+  // how many repos should you expect?
   t.end();
 });
 
