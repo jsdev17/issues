@@ -23,4 +23,4 @@ __On line 17__, you'll see a string to an endpoint. _Change the username on the 
 ```javascript
 let url = 'http://localhost:3005/api/github/{username}/repos';
 ```
-You must enter a valid github username.
+You must enter a valid GitHub username.
