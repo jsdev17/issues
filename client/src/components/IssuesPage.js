@@ -21,7 +21,7 @@ export default class IssuesPage extends Component {
 
   componentDidMount() {
     let url =
-        `http://localhost:3005/api/${this.state.username}/${this.state.repo}/issues`;
+        `http://localhost:3005/api/github/${this.state.username}/${this.state.repo}/issues`;
     // Fetch issues for repo and save them into state
     axios.get(url)
     .then(res => {

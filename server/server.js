@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
 
 // Fetches and returns all repositories
 // (with issues only) of a specified user.
-app.get('/api/:username/repos', (req, res) => {
+app.get('/api/github/:username/repos', (req, res) => {
     let username = req.params.username;
     api.getReposForUser(username)
     .then(function(repos) {
@@ -29,7 +29,7 @@ app.get('/api/:username/repos', (req, res) => {
 
 // Fetches and returns issues of a specified
 // repository belonging to a specified user
-app.get('/api/:username/:repo/issues', (req, res) => {
+app.get('/api/github/:username/:repo/issues', (req, res) => {
     let username = req.params.username,
         repo     = req.params.repo;
     api.getIssuesForRepo(username, repo)

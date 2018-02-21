@@ -18,3 +18,6 @@ The application is a working prototype, and is thus tailored to retrieve and ren
 slight change in the source code; however, you will not be able to see each repository's issues. This is because in order for issues to be rendered, they need to be matched with documents in the database; that is to say, if there's not a document (in the database) for each issue retrieved from GitHub, there will be no match and the issue won't be rendered. This behavior may or may not change in future versions of this application. For now, just keep in mind its present limitations.
 
 ### Fetching repos for another GitHub User
+There's a file named `ReposPage.js` in the `client` directory. The path to this file is the following: `client/src/components/ReposPage.js`. <br />
+__On line 17__, you'll see a string to an endpoint. _Change the username on the string_ to fetch repositories of another GitHub user. Like so: <br />
+```let url = 'http://localhost:3005/api/github/{username}/repos';```

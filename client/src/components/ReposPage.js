@@ -14,7 +14,7 @@ export default class ReposPage extends Component {
   };
 
   componentDidMount() {
-    let url = 'http://localhost:3005/api/jsdev17/repos';
+    let url = 'http://localhost:3005/api/github/jsdev17/repos';
     // Fetch repositories for given user from server
     axios.get(url)
       .then(res => {
