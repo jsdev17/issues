@@ -1,5 +1,6 @@
 # Repos & Issues
 
+## Getting set up and running.
 Here are the __detailed instructions__ on how to download this 
 repository and get the application running. Also, here you'll
 find a general overview of the application's __expected behavior__.
@@ -13,3 +14,5 @@ To achieve this, _we will be working heavily in the terminal_.
 
 1. Once `npm install` is finished, go to the `server` directory and run `npm start`. This will start the server.
 1. Lastly, go to the `client` directory and run `npm start`. This will automatically initilialize the application on your browser.
+
+## A note on expected behavior.
