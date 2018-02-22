@@ -10,7 +10,13 @@ repository and get the application running. To achieve this, _we will be working
 1. Once you've cloned the repository, you should see __two directories__ at the root level: one named `server` and another named `client`. Go into each of these directories and run an `npm install`.
     - For the sake of clarity, this means __you'll be running__ `npm install` __twice__; once inside `server` and another inside `client`. You can do this one at a time, or you can open a second tab in your terminal and run these commands simultaneously.
 
-1. __Once__ `npm install` __is finished in__ `server`, __start MongoDB in your computer__. You can do this by opening a new terminal tab, or window, and running the `mongod` command. Once Mongo is running, run `npm start` __inside the__ `server` __directory__. This will start the server.
+1. __Once__ `npm install` __is finished in__ `server`, then
+    1. Create a `.env` file at the root level. In this file, add two varibles, like this: ```javascript
+    TOKEN=(ask the owner this repo for a token)
+    DB_URI=mongodb://localhost/strategic-test
+    ```
+    1. __start MongoDB in your computer__. You can do this by opening a new terminal tab, or window, and running the `mongod` command.
+    1. Once Mongo is running, run `npm start` __inside the__ `server` __directory__. This will start the server.
 1. In `client`, all you have to do it run `npm start` once `npm install` is done. This will automatically initilialize the application on your browser.
 
 ## A note on expected behavior.
