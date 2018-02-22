@@ -1,7 +1,7 @@
 # Repos & Issues
 
 ## Getting set up and running.
-Here are the __detailed instructions__ on how to download this 
+Here are _detailed instructions_ on how to download this 
 repository and get the application running. To achieve this, _we will be working heavily in the terminal_. Below you'll find a general overview of the application's __expected behavior__.
 
 1. In your computer's _terminal_, navigate to the directory of your choice and `git clone` _this_ repository.
