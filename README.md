@@ -11,10 +11,10 @@ repository and get the application running. To achieve this, _we will be working
     - For the sake of clarity, this means __you'll be running__ `npm install` __twice__; once inside `server` and another inside `client`. You can do this one at a time, or you can open a second tab in your terminal and run these commands simultaneously.
 
 1. __Once__ `npm install` __is finished in__ `server`, then
-    1. Create a `.env` file at the root level. In this file, add two varibles `TOKEN=(ask the owner this repo for a token)` and `DB_URI=mongodb://localhost/strategic-test`.
+    1. Create a `.env` file __at the root level_. In this file, add two varibles `TOKEN=(ask the owner this repo for a token)` and `DB_URI=mongodb://localhost/strategic-test`.
     1. __start MongoDB in your computer__. You can do this by opening a new terminal tab, or window, and running the `mongod` command.
     1. Once Mongo is running, run `npm start` __inside the__ `server` __directory__. This will start the server.
-1. In `client`, all you have to do it run `npm start` once `npm install` is done. This will automatically initilialize the application on your browser.
+1. In `client`, all you have to do is run `npm start` once `npm install` is done. This will automatically open the application on your browser.
 
 ## A note on expected behavior.
 The application is a working prototype, and is thus tailored to retrieve and render data from GitHub repositories and issues for __this account only__. If you wish to fetch and render repositories from another GitHub account, you may do so by making a
@@ -22,8 +22,12 @@ slight change in the source code; however, you will not be able to see each repo
 
 ### Fetching repos for another GitHub User
 There's a file named `ReposPage.js` in the `client` directory. The path to this file is the following: `client/src/components/ReposPage.js`. <br /><br />
-__On line 17__, you'll see a string to an endpoint. _Change the username on the string_ to fetch repositories of another GitHub user. Like so:
+__On line 13__, inside the component's state, _change the value of user_ to fetch repositories of another GitHub user. Like so:
 ```javascript
-let url = 'http://localhost:3005/api/github/{username}/repos';
+    this.state = {
+      repos: [],
+      loaded: false,
+      user: 'change the value of this'
+    }
 ```
 You must enter a valid GitHub username.
