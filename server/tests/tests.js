@@ -19,7 +19,7 @@ test('Assertions for getReposForUser([username]) method', (t) => {
   })
 });
 
-test('test', (t) => {
+test('Searching for matching workitems in Mongo Collection...', (t) => {
   var numOfTests = dataset.repos.length;
   var username = dataset.username;
   t.plan(numOfTests);
