@@ -12,9 +12,9 @@ github.authenticate({
 
 // Method retrieves all issues for a repo.
 module.exports = async function (username, repo, per_page = 100) {
-    // Make initial fetch; get issues for repo.
-    // If there's an error, log it. Initial call
-    // WILL NOT get all issues
+    // Make initial call; get up to 100 issues for repo.
+    // If there's an error, log it. If there's more than
+    // 100 issues in this repo, initial call WILL NOT get them all
     var result = await github.issues.getForRepo({
         owner: username,
         repo: repo,
@@ -27,25 +27,26 @@ module.exports = async function (username, repo, per_page = 100) {
     if(!result.meta.link) {
       // if there's NO link header, it means
       // that there are NO pages to traverse.
-      // that is: we've retrieved all repositories.
+      // that is: we've retrieved all issues.
       issues = result.data;
     } else {
       // if there IS a link header, we need to
       // capture the number of the last page; this
       // will allow us to determine how many pages
       // we need to traverse in order to capture 
-      // all available repositories
+      // all available issues
       issues = await traverse({
         type: 'issues',
         user: username,
         repo: repo,
         per_page: per_page,
         data: result.data,
-        link: result.meta
+        link: result.meta // last page info passed here
       });
     }
-    // Grabs price tag, stage tag, and due date for
-    // each issue from database and assigns it
+    // Grabs additional info from database and assign it
+    console.log('im working lv1');
     issues = await Promise.all(issues.map(issue => set_price_stage_and_dude_date(issue, repo)));
+    console.log('im not working lv1');
     return issues;
 }

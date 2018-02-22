@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "babel-node tests.js | faucet"
+    "test": "babel-node ./tests/tests.js | faucet"
   },
   "keywords": [],
   "author": "",

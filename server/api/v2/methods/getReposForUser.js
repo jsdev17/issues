@@ -11,9 +11,9 @@ github.authenticate({
 });
 
 async function getReposForUser(username, per_page = 100) {
-    // Make initial fetch; get user repos from GitHub.
-    // If there's an error, log it. Initial call WILL NOT
-    // get all repos
+    // Make initial call; get (up to) 100 repos for this user
+    // If there's an error, log it. If there's more than 100,
+    // initial call WILL NOT get all repos
     var result = await github.repos.getForUser({
         username: username,
         per_page: per_page,
@@ -37,12 +37,11 @@ async function getReposForUser(username, per_page = 100) {
         user: username,
         per_page: per_page,
         data: result.data,
-        link: result.meta
+        link: result.meta // last page info passed here
       });
     }
 
-    console.log('--- cleaning data... ---');
-     // Only keep repositories that have open issues
+     // Only keep repositories that have issues
      var repos = repos.filter(repo => repo.open_issues_count !== 0);
      console.log(`${repos.length} repos left after filtering out ones without issues`);
      // Remove excess data from repo objects
@@ -60,7 +59,7 @@ module.exports = getReposForUser;
 // get every single issue of every single repo, and that consumes a lot
 // of processing time). Instead, I'm chaging it so that this method ONLY
 // retrieves repositories. That way, when the user clicks on the cards
-// for a respective repo (on the user interface), we can retrieve the 
+// for a repo (on the user interface), we can retrieve the 
 // issues for that repo upon request. In essence, we're not going to give
 // more information than is originally asked.
 

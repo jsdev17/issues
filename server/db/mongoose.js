@@ -1,4 +1,3 @@
-// require('dotenv').load();
 const mongoose =            require('mongoose');
 const initializeWorkitems = require('./initilialize/getWorkItems');
 

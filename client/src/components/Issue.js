@@ -12,6 +12,7 @@ const Issue = ({issue}) => (
         >
           {issue.stage === 'active' ? <p>Assigned to: {issue.assignee}</p> : ''}
         </p>
+        <span className='card-text text-muted' style={{fontSize: '12px'}}> Due on: {issue.due_date}</span>
       </div>
       <div className='card-footer text-center' style={{fontSize: '12px', background: 'none'}}>
         <Link to={issue.html_url} target="_blank">
