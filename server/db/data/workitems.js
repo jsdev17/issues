@@ -17,6 +17,7 @@ const objStore =  [
   price: 75.00,
   currency: "USD",
   stage: "active",
+  assignee: "[DevName]",
   dueDate: dt1 },
   {
   itemId: "2",
@@ -24,6 +25,7 @@ const objStore =  [
   price: 225.00,
   currency: "USD",
   stage: "active",
+  assignee: "[DevName]",
   dueDate: dt2 },
   {
   itemId: "3",
@@ -31,6 +33,7 @@ const objStore =  [
   price: 175.00,
   currency: "USD",
   stage: "active",
+  assignee: "[DevName]",
   blockchain: {
     id: "12345"
   },
@@ -41,6 +44,7 @@ const objStore =  [
   price: 45.00,
   currency: "USD",
   stage: "active",
+  assignee: "[DevName]",
   dueDate: dt4 },
   {
   itemId: "5",
@@ -48,6 +52,7 @@ const objStore =  [
   price: 338.00,
   currency: "USD",
   stage: "closed",
+  assignee: "[DevName]",
   dueDate: dt2 },
   {
   itemId: "6",
@@ -55,6 +60,7 @@ const objStore =  [
   price: 206.00,
   currency: "USD",
   stage: "open",
+  assignee: "[DevName]",
   dueDate: dt2 },
   {
     itemId: '1',
@@ -63,6 +69,7 @@ const objStore =  [
     price: 100.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -72,6 +79,7 @@ const objStore =  [
     price: 125.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -81,6 +89,7 @@ const objStore =  [
     price: 100.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -90,6 +99,7 @@ const objStore =  [
     price: 100.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -99,6 +109,7 @@ const objStore =  [
     price: 100.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -108,6 +119,7 @@ const objStore =  [
     price: 100.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -117,6 +129,7 @@ const objStore =  [
     price: 100.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -126,6 +139,7 @@ const objStore =  [
     price: 200.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -135,6 +149,7 @@ const objStore =  [
     price: 200.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -144,6 +159,7 @@ const objStore =  [
     price: 200.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -153,6 +169,7 @@ const objStore =  [
     price: 200.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -162,6 +179,7 @@ const objStore =  [
     price: 200.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -171,6 +189,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -180,6 +199,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -189,6 +209,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -198,6 +219,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -207,6 +229,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -216,6 +239,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -225,6 +249,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -234,6 +259,7 @@ const objStore =  [
     price: 150.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -243,6 +269,7 @@ const objStore =  [
     price: 175.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -252,6 +279,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -261,6 +289,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -270,6 +299,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -279,6 +309,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -288,6 +319,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -297,6 +329,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -306,6 +339,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -315,6 +349,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -324,6 +359,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt1
   },
   {
@@ -333,6 +369,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt2
   },
   {
@@ -342,6 +379,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt2
   },
   {
@@ -351,6 +389,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -360,6 +399,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -369,6 +409,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt2
   },
   {
@@ -378,6 +419,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -387,6 +429,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -396,6 +439,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt2
   },
   {
@@ -405,6 +449,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -414,6 +459,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -423,6 +469,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -432,6 +479,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -441,6 +489,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -450,6 +499,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -459,6 +509,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -468,6 +519,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -477,6 +529,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -486,6 +539,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -495,6 +549,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -504,6 +559,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -513,6 +569,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -522,6 +579,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -531,6 +589,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -540,6 +599,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -549,6 +609,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -558,6 +619,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -567,6 +629,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -576,6 +639,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -585,6 +649,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -594,6 +659,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -603,6 +669,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -612,6 +679,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -621,6 +689,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -630,6 +699,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -639,6 +709,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -648,6 +719,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -657,6 +729,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -666,6 +739,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -675,6 +749,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -684,6 +759,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -693,6 +769,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -702,6 +779,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -711,6 +789,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -720,6 +799,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -729,6 +809,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -738,6 +819,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -747,6 +829,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -756,6 +839,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -765,6 +849,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -774,6 +859,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -783,6 +869,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -792,6 +879,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -801,6 +889,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -810,6 +899,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -819,6 +909,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -828,6 +919,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -837,6 +929,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -846,6 +939,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -855,6 +949,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -864,6 +959,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -873,6 +969,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -882,6 +979,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -891,6 +989,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -900,6 +999,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -909,6 +1009,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -918,6 +1019,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -927,6 +1029,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -936,6 +1039,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -945,6 +1049,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -954,6 +1059,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -963,6 +1069,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -972,6 +1079,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -981,6 +1089,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -990,6 +1099,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -999,6 +1109,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1008,6 +1119,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1017,6 +1129,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1026,6 +1139,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1035,6 +1149,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1044,6 +1159,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1053,6 +1169,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1062,6 +1179,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1071,6 +1189,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1080,6 +1199,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1089,6 +1209,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1098,6 +1219,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1107,6 +1229,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1116,6 +1239,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1125,6 +1249,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1134,6 +1259,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1143,6 +1269,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1152,6 +1279,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1161,6 +1289,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1170,6 +1299,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1179,6 +1309,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1188,6 +1319,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1197,6 +1329,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1206,6 +1339,7 @@ const objStore =  [
     price: 320.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1215,6 +1349,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1224,6 +1359,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1233,6 +1369,7 @@ const objStore =  [
     price: 125.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1242,6 +1379,7 @@ const objStore =  [
     price: 275.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1251,6 +1389,7 @@ const objStore =  [
     price: 350.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1260,6 +1399,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1269,6 +1409,7 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
@@ -1278,87 +1419,97 @@ const objStore =  [
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '1',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '2',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '3',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 250.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '4',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 125.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '5',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 275.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '6',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 350.00,
     currency: 'USD',
     stage: 'closed',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '7',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 250.00,
     currency: 'USD',
     stage: 'open',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '8',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   },
   {
     itemId: '9',
-    repo: 'dinner-reservations',
+    repo: 'customer-service',
     description: 'write a function that performs X task',
     price: 250.00,
     currency: 'USD',
     stage: 'active',
+    assignee: "[DevName]",
     dueDate: dt3
   }
 ]

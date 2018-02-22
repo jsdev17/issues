@@ -61,11 +61,10 @@ export default class ReposPage extends Component {
         <span id="repos-count" className="d-flex justify-content-center">
           {
             this.state.loaded && this.state.repos.length > 0 ?
-              this.showReposCount() : 
-              null
+              this.showReposCount() : null
           }
         </span>
-        
+
         <ul id="repos-content">
           {this.renderPage()}
         </ul>

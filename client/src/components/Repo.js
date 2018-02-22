@@ -5,7 +5,7 @@ const Repo = ({repo}) => (
   <li id={repo.id} className="repo">
     <div className="card text-center" style={styles.repo}>
       <div className="card-body repo-title">
-        <Link to={repo.html_url} style={styles.repo_title}>
+        <Link to={repo.html_url} target="_blank" style={styles.repo_title}>
           <h5 className="card-title">{repo.name}</h5>
         </Link>
         <h6 className="card-subtitle mb-2 text-muted">Issues: {repo.open_issues_count}</h6>
