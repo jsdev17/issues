@@ -4,7 +4,7 @@
 Here are _detailed instructions_ on how to download this 
 repository and get the application running. To achieve this, _we will be working heavily in the terminal_. Below you'll find a general overview of the application's __expected behavior__.
 
-1. In your computer's _terminal_, navigate to the directory of your choice and `git clone` _this_ repository.
+1. In your computer's terminal, navigate to the directory of your choice and `git clone` _this_ repository.
     - When you're in the directory of your choice, paste this command into your terminal: `git clone https://github.com/jsdev17/issues.git` then hit `Enter`.
 
 1. Once you've cloned the repository, you should see __two directories__ at the root level: one named `server` and another named `client`. Go into each of these directories and run an `npm install`.
