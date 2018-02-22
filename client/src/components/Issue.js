@@ -15,7 +15,7 @@ const assignBadgeClass = (stage) => (
 const Issue = ({issue}) => (
   // OPTION 1
   <li id={issue.id} number={issue.number} className="issue">
-    <div>
+    {/* <div>
       <button className="issue-body" type="button" data-toggle="collapse"
         data-target={`#issue${issue.number}`} aria-expanded="false" aria-controls={`issue${issue.number}`}>
         <span className={`badge ${assignBadgeClass(issue.stage)}`} style={{margin: '5px', marginRight: 'auto'}}>
@@ -33,28 +33,25 @@ const Issue = ({issue}) => (
         <p style={{fontSize: '12px', display: 'inline-block'}}>View on GitHub</p>
         </Link>
       </div>
+    </div> */}
+
+    <div className='card' style={{width: '18rem', padding: '10px', background: '#eee'}}> 
+      <div className='card-body'>
+        <h5 className='card-title' style={{fontSize: '17px'}}>{issue.title}</h5>
+        <h6 className='card-subtitle mb-2 price' style={{fontSize: '14px'}}>{`$${issue.price}`}</h6>
+        <p className='card-text'
+          style={{fontSize: '14px'}}
+        >
+          {issue.stage === 'active' ? <p>Assigned to: [DevName]</p> : ''}
+        </p>
+      </div>
+      <div className='card-footer text-center' style={{fontSize: '12px', background: 'none'}}>
+        <Link to={issue.html_url} target="_blank">
+          <span className="">View on GitHub</span>
+        </Link>
+      </div>
     </div>
   </li>
-
-  // OPTION 2
-  // <div className="card" style={{maxWidth: '70%'}}>
-  //   <div className="card-header" role="tab" id={`heading${issue.number}`}>
-  //     <h5 className="mb-0">
-  //       <a data-toggle="collapse" data-parent="#accordion" href={`#issue${issue.number}`} aria-controls={`issue${issue.number}`}>
-  //         <span className="issue-title">{issue.title}</span> <span className="price">[$$$]</span>
-  //       </a>
-  //     </h5>
-  //   </div>
-
-  //   <div id={`issue${issue.number}`} className="collapse" role="tabpanel" aria-labelledby={`heading${issue.number}`}>
-  //     <div className="card-block">
-  //       <p>{issue.body}</p>
-  //       <Link to={issue.html_url} target="_blank">
-  //         <button>View on GitHub</button>
-  //       </Link>
-  //     </div>
-  //   </div>
-  // </div>
 );
 
 export default Issue;

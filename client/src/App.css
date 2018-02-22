@@ -21,27 +21,6 @@
   padding: 10px;
 }
 
-/* .notification {
-  text-align: center;
-} */
-
-/* table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 80%;
-  margin: 0 auto;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 10px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-} */
-
 .repo, .issue {
   margin: 10px;
 }
@@ -68,9 +47,9 @@ tr:nth-child(even) {
 }
 
 #issue-list li {
-  max-width: 30%;
-  flex: 0 1 30%;
-  /* margin: 10px 0px; */
+  max-width: 25%;
+  flex: 0 1 25%;
+  margin: 10px 0px; /* fits 4 into one line */
 }
 
 #issue-list li div button {
@@ -99,4 +78,8 @@ tr:nth-child(even) {
   font-weight: bold;
   padding: 3px;
   font-size: 16px;
+}
+
+.issue {
+  width: 100px;
 }

@@ -9,12 +9,13 @@ export default class ReposPage extends Component {
     super(props);
     this.state = {
       repos: [],
-      loaded: false
+      loaded: false,
+      user: 'jsdev17'
     }
   };
 
   componentDidMount() {
-    let url = 'http://localhost:3005/api/github/jsdev17/repos';
+    let url = `http://localhost:3005/api/github/${this.state.user}/repos`;
     // Fetch repositories for given user from server
     axios.get(url)
       .then(res => {
@@ -29,7 +30,7 @@ export default class ReposPage extends Component {
   showReposCount() {
     return (
       <p id="repos-count">
-        {this.state.repos.length} repositories available
+        {this.state.repos.length} repositories available for user {this.state.user}
       </p>
     );
   }
