@@ -12,9 +12,11 @@ export default class IssuesPage extends Component {
     this.state = {
       username: this.props.match.params.user,
       repo: this.props.match.params.repo,
+      loaded: false,
       criteria: 'open',
       issues: []
     }
+    // Bind `this` to these methods so they can access state
     this.renderPage = this.renderPage.bind(this);
     this.handleCriteriaChange = this.handleCriteriaChange.bind(this);
   }
@@ -25,29 +27,39 @@ export default class IssuesPage extends Component {
     // Fetch issues for repo and save them into state
     axios.get(url)
     .then(res => {
-      this.setState({issues: res.data})
+      this.setState({
+        issues: res.data,
+        loaded: true
+      })
     });
   }
 
   renderPage() {
     var issues;
-    // Render an issue component for every issue
-    // based on current filtering criteria
+    // Render issues based on current filtering criteria.
+    // If there are no issues under such criteria, display
+    // a message stating that no issues were found.
     if (this.state.criteria === 'open') {
         issues = this.state.issues.filter(issue => issue.stage === 'open');
-        return issues = issues.map(issue => (
-          <Issue key={issue.number} issue={issue} />
-        ));
+        return issues.length > 0 ? (
+          issues = issues.map(issue => <Issue key={issue.number} issue={issue} />)
+        ) : (
+          <p>No {this.state.criteria} issues found</p>
+        )
     } else if (this.state.criteria === 'active') {
         issues = this.state.issues.filter(issue => issue.stage === 'active');
-        return issues = issues.map(issue => (
-          <Issue key={issue.number} issue={issue} />
-        ));
+        return issues.length > 0 ? (
+          issues = issues.map(issue => <Issue key={issue.number} issue={issue} />)
+        ) : (
+          <p>No {this.state.criteria} issues found</p>
+        )
     } else if (this.state.criteria === 'closed') {
         issues = this.state.issues.filter(issue => issue.stage === 'closed');
-        return issues = issues.map(issue => (
-          <Issue key={issue.number} issue={issue} />
-        ));
+        return issues.length > 0 ? (
+          issues = issues.map(issue => <Issue key={issue.number} issue={issue} />)
+        ) : (
+          <p>No {this.state.criteria} issues found</p>
+        )
     }
   };
 
@@ -66,11 +78,8 @@ export default class IssuesPage extends Component {
           handleCriteriaChange={this.handleCriteriaChange}
         />
         <ul id="issue-list" className="">
-          {this.renderPage()}
+          {this.state.loaded ? this.renderPage() : null}
         </ul>
-        {/* <div id="accordion" role="tablist" aria-multiselectable="true">
-          {issues}
-        </div> */}
       </div>
     );
   }

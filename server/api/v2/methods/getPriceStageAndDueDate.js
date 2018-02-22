@@ -8,6 +8,7 @@ module.exports = async function (issue_number, repo) {
   return {
     price: workItem.price,
     stage: workItem.stage,
+    assignee: workItem.assignee,
     due_date: moment(workItem.dueDate).format("MMMM Do, YYYY")
   };
 }

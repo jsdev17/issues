@@ -1198,6 +1198,168 @@ const objStore =  [
     currency: 'USD',
     stage: 'active',
     dueDate: dt3
+  },
+  {
+    itemId: '1',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 320.00,
+    currency: 'USD',
+    stage: 'open',
+    dueDate: dt3
+  },
+  {
+    itemId: '2',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '3',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '4',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 125.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '5',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 275.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '6',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 350.00,
+    currency: 'USD',
+    stage: 'closed',
+    dueDate: dt3
+  },
+  {
+    itemId: '7',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'open',
+    dueDate: dt3
+  },
+  {
+    itemId: '8',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '9',
+    repo: 'wholesale',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'open',
+    dueDate: dt3
+  },
+  {
+    itemId: '1',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'open',
+    dueDate: dt3
+  },
+  {
+    itemId: '2',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '3',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'closed',
+    dueDate: dt3
+  },
+  {
+    itemId: '4',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 125.00,
+    currency: 'USD',
+    stage: 'open',
+    dueDate: dt3
+  },
+  {
+    itemId: '5',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 275.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '6',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 350.00,
+    currency: 'USD',
+    stage: 'closed',
+    dueDate: dt3
+  },
+  {
+    itemId: '7',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'open',
+    dueDate: dt3
+  },
+  {
+    itemId: '8',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
+  },
+  {
+    itemId: '9',
+    repo: 'dinner-reservations',
+    description: 'write a function that performs X task',
+    price: 250.00,
+    currency: 'USD',
+    stage: 'active',
+    dueDate: dt3
   }
 ]
 

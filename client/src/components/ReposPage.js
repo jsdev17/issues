@@ -16,10 +16,10 @@ export default class ReposPage extends Component {
 
   componentDidMount() {
     let url = `http://localhost:3005/api/github/${this.state.user}/repos`;
-    // Fetch repositories for given user from server
+    // Fetch repositories for given user
     axios.get(url)
       .then(res => {
-        // Save repo data to state
+        // Save data to state
         this.setState({
           repos: res.data,
           loaded: true
@@ -28,34 +28,47 @@ export default class ReposPage extends Component {
   };
 
   showReposCount() {
-    return (
-      <p id="repos-count">
-        {this.state.repos.length} repositories available for user {this.state.user}
-      </p>
-    );
+    // Determines proper grammar based on number of repos available
+    return this.state.repos.length > 1 ?
+      `${this.state.repos.length} repositories available for user ${this.state.user}`
+      :
+      `${this.state.repos.length} repository available for user ${this.state.user}`
+  }
+
+  renderPage() {
+    // First check if data has been loaded into state.
+    // After it's been loaded, check if there are repos
+    // (the API will only return repos with issues).
+    // If state.repos[] is empty, display a message. 
+    // Otherwise, render repos.
+    if(this.state.loaded) {
+      if(this.state.repos.length > 0) {
+        let repos = this.state.repos.map(repo => <Repo key={repo.id} repo={repo}/>);
+        return repos;
+      } else {
+        return (
+          <p> Did not find repositories with issues for user <strong>{this.state.user}</strong>...</p>
+        )
+      }
+    }
   }
 
   render() {
-    // Render a Repo component for each available repository
-    var repos = this.state.repos.map(repo => (
-      // Pass it its data as a prop
-      <Repo key={repo.id} repo={repo}/>
-    ));
     return (
       <div>
+        {/* Repos count message will display after data has been fetched
+        and ONLY if there's data to render */}
         <span id="repos-count" className="d-flex justify-content-center">
-        {this.state.loaded ? this.showReposCount() : null}
-        </span>
-        <ul id="repos-content">
-          {/* This cryptic nested ternary checks if there are repos WITH issues
-          to show... if not, it renders a message, else, it shows the repos */}
           {
-            !this.state.loaded ? null : 
-            repos.length === 0 ? <p>No repositories with issues to show...</p> : 
-            repos
+            this.state.loaded && this.state.repos.length > 0 ?
+              this.showReposCount() : 
+              null
           }
-        </ul>
+        </span>
         
+        <ul id="repos-content">
+          {this.renderPage()}
+        </ul>
       </div>
     );
   }
