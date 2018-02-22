@@ -14,7 +14,7 @@ const Repo = ({repo}) => (
         Issues: {repo.open_issues_count}
       </Link>
     </div> */}
-    <div className="card" style={styles.repo}>
+    <div className="card text-center" style={styles.repo}>
       <div className="card-body repo-title">
         <Link to={repo.html_url} style={{textDecoration: 'none'}}>
           <h5 className="card-title">{repo.name}</h5>
@@ -23,7 +23,7 @@ const Repo = ({repo}) => (
         <p className="card-text">{repo.description}</p>
       </div>
     </div>
-    <div className="card-footer" style={{background: '#222'}}>
+    <div className="card-footer text-center" style={{background: '#222'}}>
         <Link to={`/${repo.owner.login}/${repo.name}/issues`}
           className="card-link" style={{color: '#eee'}}
         >
@@ -51,8 +51,8 @@ const styles = {
   repo: {
     width: '18rem',
     padding: '10px',
-    maxHeight: '150px',
-    minHeight: '150px',
+    maxHeight: '135px',
+    minHeight: '135px',
     fontSize: '14px'
   }
 }

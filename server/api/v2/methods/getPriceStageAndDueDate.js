@@ -3,8 +3,8 @@ var moment = require('moment');
 var Schema = mongoose.Schema;
 var WorkItem = mongoose.model('WorkItem', new Schema({}));
 
-module.exports = async function (issue_number) {
-  var workItem = await WorkItem.findOne({itemId: issue_number}).lean();
+module.exports = async function (issue_number, repo) {
+  var workItem = await WorkItem.findOne({$and: [{itemId: issue_number},{repo: repo}]}).lean();
   return {
     price: workItem.price,
     stage: workItem.stage,

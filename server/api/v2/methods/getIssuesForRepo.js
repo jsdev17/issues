@@ -46,6 +46,6 @@ module.exports = async function (username, repo, per_page = 100) {
     }
     // Grabs price tag, stage tag, and due date for
     // each issue from database and assigns it
-    issues = await Promise.all(issues.map(issue => set_price_stage_and_dude_date(issue)));
+    issues = await Promise.all(issues.map(issue => set_price_stage_and_dude_date(issue, repo)));
     return issues;
 }
