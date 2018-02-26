@@ -4,9 +4,7 @@ var Schema = mongoose.Schema;
 var WorkItem = mongoose.model('WorkItem', new Schema({}));
 
 module.exports = async function (issue_number, repo) {
-  console.log('im working lv3');
-  var workItem = await WorkItem.findOne({$and: [{itemId: issue_number},{repo: repo}]}).lean();
-  console.log('im not working lv3');
+  var workItem = await Promise.resolve(WorkItem.findOne({$and: [{itemId: issue_number},{repo: repo}]}).lean());
   return {
     price: workItem.price,
     stage: workItem.stage,

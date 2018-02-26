@@ -13,6 +13,7 @@ let dt4 = new Date('3/4/2018')
 const objStore =  [
   {
   itemId: "1",
+  repo: "reservations",
   description: "create a reactjs login widget",
   price: 75.00,
   currency: "USD",
@@ -21,6 +22,7 @@ const objStore =  [
   dueDate: dt1 },
   {
   itemId: "2",
+  repo: "reservations",
   description: "create an agent to authenticate",
   price: 225.00,
   currency: "USD",
@@ -29,6 +31,7 @@ const objStore =  [
   dueDate: dt2 },
   {
   itemId: "3",
+  repo: "reservations",
   description: "create an agent skill to capture credit card data",
   price: 175.00,
   currency: "USD",
@@ -40,6 +43,7 @@ const objStore =  [
   dueDate: dt3 },
   {
   itemId: "4",
+  repo: "reservations",
   description: "build and test an agent skill to post images to cloudinary",
   price: 45.00,
   currency: "USD",
@@ -48,6 +52,7 @@ const objStore =  [
   dueDate: dt4 },
   {
   itemId: "5",
+  repo: "reservations",
   description: "create an agent to set up a shared video link",
   price: 338.00,
   currency: "USD",
@@ -56,6 +61,7 @@ const objStore =  [
   dueDate: dt2 },
   {
   itemId: "6",
+  repo: "reservations",
   description: "create an agent skill to return weather report based on location parameter",
   price: 206.00,
   currency: "USD",
